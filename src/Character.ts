@@ -37,6 +37,7 @@ class Character implements Fighter {
   get defense(): number { return this._defense; }
   get dexterity(): number { return this._dexterity; }
   get energy(): Energy { return { ...this._energy }; }
+  get name(): string { return this._name; }
 
   receiveDamage(attackPoints: number): number {
     const damage = attackPoints - this._defense;
